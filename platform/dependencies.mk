@@ -19,8 +19,7 @@ PRODUCT_PACKAGES += \
     libaudioroute \
     libaudioutils \
     libtinyalsa \
-    libtinycompress \
-    tinymix
+    libtinycompress
 
 # Audio effects
 PRODUCT_PACKAGES += \
