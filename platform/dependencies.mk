@@ -90,8 +90,7 @@ PRODUCT_PACKAGES += \
     libion \
     libminijail \
     libstdc++_vendor \
-    libtinyxml \
-    libxml2
+    libtinyxml
 
 ### TELEPHONY
 PRODUCT_PACKAGES += \
