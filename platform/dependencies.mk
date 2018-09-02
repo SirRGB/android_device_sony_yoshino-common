@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-### VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
-
 # VNDFWK_DETECT
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
