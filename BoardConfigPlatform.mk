@@ -79,15 +79,6 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 endif
 TARGET_COPY_OUT_VENDOR := vendor
 
-### DEXPREOPT
-# Enable dexpreopt for everything to speed boot time
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
-      WITH_DEXPREOPT := true
-  endif
-endif
-
 ### BUILD_COPY_HEADERS ALLOWED
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
