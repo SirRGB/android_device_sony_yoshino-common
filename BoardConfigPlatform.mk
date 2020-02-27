@@ -41,7 +41,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 TARGET_KERNEL_SOURCE  := kernel/sony/msm8998
 TARGET_KERNEL_VERSION := 4.4
 
-# Taken from unpacked stock boot.img / README_Xperia in Kernel source
+# Taken from unpacked stock boot.img
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += sched_enable_hmp=0
@@ -51,8 +51,8 @@ BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
 BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
-# See README_Xperia in Kernel Source
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 
@@ -104,7 +104,6 @@ DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
 ### PROPS
 TARGET_ODM_PROP += $(PLATFORM_PATH)/odm.prop
-# This is a reset, add more in devices if needed
 TARGET_SYSTEM_PROP := $(PLATFORM_PATH)/system.prop
 TARGET_VENDOR_PROP := $(PLATFORM_PATH)/vendor.prop
 
