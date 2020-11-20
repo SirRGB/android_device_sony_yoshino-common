@@ -127,7 +127,6 @@ endif
 ### RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PER_MGR_ENABLED := true
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 ### SEPOLICY
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
