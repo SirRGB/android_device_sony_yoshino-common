@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libvolumelistener
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 ### HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
