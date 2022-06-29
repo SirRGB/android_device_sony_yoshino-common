@@ -19,6 +19,8 @@ PLATFORM_PATH := device/sony/yoshino-common
 ### PROPRIETARY VENDOR FILES
 $(call inherit-product, vendor/sony/yoshino-common/yoshino-common-vendor.mk)
 
+TARGET_EXCLUDES_AUDIOFX := true
+
 PRODUCT_SOONG_NAMESPACES += \
     $(PLATFORM_PATH) \
     hardware/google/interfaces \
