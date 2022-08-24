@@ -16,6 +16,8 @@
 
 PLATFORM_PATH := device/sony/yoshino-common
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
 ### PROPRIETARY VENDOR FILES
 $(call inherit-product, vendor/sony/yoshino-common/yoshino-common-vendor.mk)
 
