@@ -26,6 +26,10 @@ on early-init
 
     write /sys/devices/soc/soc:fpc1145/uevent add
 
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache 
+
 on init
     chmod 0664 /proc/rdtag
     chown root system /proc/rdtag
