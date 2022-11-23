@@ -38,6 +38,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 
 ### KERNEL
+TARGET_KERNEL_CONFIG += vendor/debugfs.config
 TARGET_KERNEL_SOURCE  := kernel/sony/msm8998
 TARGET_KERNEL_VERSION := 4.4
 
