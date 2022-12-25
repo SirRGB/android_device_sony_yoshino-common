@@ -236,6 +236,9 @@ on boot
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 
+    #Restrict permissions to socket file to hide Magisk
+    chmod 440 /proc/net/unix
+
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
