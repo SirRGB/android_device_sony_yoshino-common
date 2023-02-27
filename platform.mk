@@ -20,6 +20,7 @@ PLATFORM_PATH := device/sony/yoshino-common
 $(call inherit-product, vendor/sony/yoshino-common/yoshino-common-vendor.mk)
 
 TARGET_EXCLUDES_AUDIOFX := true
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_SOONG_NAMESPACES += \
     $(PLATFORM_PATH) \
