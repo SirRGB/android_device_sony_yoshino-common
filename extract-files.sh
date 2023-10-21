@@ -53,6 +53,33 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+# Patch camera related blobs to load libstdc++_vendor.so instead of libstdc++.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/lib/libjni_imageutil.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/lib/libjni_snapcammosaic.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/lib/libjni_snapcamtinyplanet.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/lib/libseemore.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_alfortlp.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_alfortlpserv.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_alfortrsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_bordeauxrsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_buttercakersc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_canelersc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_cheesesconersc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_dars.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_darsrsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_marblersc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_melonpanrsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_mugichocorsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_pretzchocorsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_raisinrsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_shortcakersc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_spicarsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_sumomolpserv.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_sumomorsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_topporsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsomc_yummyrsc.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsony_fooddetect.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary/vendor/lib/libsony_naruto.so
 
 # Initialize the helper
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
