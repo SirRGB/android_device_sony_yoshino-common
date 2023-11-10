@@ -76,10 +76,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
-### RIL
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full
-
 ### SYSTEM LIBS
 PRODUCT_PACKAGES += \
     libavservices_minijail \
