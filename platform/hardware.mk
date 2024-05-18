@@ -158,9 +158,9 @@ PRODUCT_PACKAGES += \
 
 # POWER
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
+    android.hardware.power-service.lineage-libperfmgr \
     android.hardware.power@1.2.vendor \
-    android.hardware.power-service.yoshino-libperfmgr
+    libqti-perfd-client
 
 # RADIO
 PRODUCT_PACKAGES += \
