@@ -128,6 +128,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PER_MGR_ENABLED := true
 
 ### SEPOLICY
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += device/sony/yoshino-common/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += device/sony/yoshino-common/sepolicy/private
