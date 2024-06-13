@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libhidlmemory.vendor
 
 ### IMS
 PRODUCT_PACKAGES += \
@@ -69,7 +70,8 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libc2dcolorconvert \
     libmm-omxcore \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_softomx_plugin.vendor
 
 # PROTOBUF
 PRODUCT_PACKAGES += \
@@ -85,7 +87,13 @@ PRODUCT_PACKAGES += \
     libion \
     libminijail \
     libstdc++_vendor \
-    libtinyxml
+    libtinyxml \
+    libnetutils.vendor \
+    libion.vendor \
+    libutilscallstack.vendor \
+    libsqlite.vendor \
+    libprocessgroup.vendor \
+    librtp_jni
 
 ### TELEPHONY
 PRODUCT_PACKAGES += \

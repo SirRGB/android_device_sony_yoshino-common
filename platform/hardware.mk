@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
 
 ### SENSORS
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 ### SERVICES
 # AUDIO
@@ -75,7 +76,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.2-impl:32
+    android.hardware.soundtrigger@2.2-impl:32 \
+    libaudioroute.vendor
 
 # BLUETOOTH
 PRODUCT_PACKAGES += \
