@@ -105,7 +105,8 @@ TARGET_USES_ION := true
 ### HIDL
 BOARD_VNDK_VERSION := current
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
 ifneq ($(filter poplar_dsds maple_dsds, $(TARGET_DEVICE)),)
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest_dsds.xml
 else
