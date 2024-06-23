@@ -16,6 +16,9 @@
 
 PLATFORM_PATH := device/sony/yoshino-common
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 ### PROPRIETARY VENDOR FILES
