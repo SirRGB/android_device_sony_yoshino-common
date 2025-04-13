@@ -264,9 +264,9 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/bin/hvdcp_opti
 
 # CNE - from from FP3 - 6.A.025.0
-vendor/app/CACertService/CACertService.apk|e33ff0c06356a8fa843f49dfa27ee21c77733738
-vendor/app/CneApp/CneApp.apk|551d0e3251eeda3af8dfa8bb55cd83b858365db8
-vendor/app/IWlanService/IWlanService.apk|a8bdac9638bc711e23269d2eead3f46a7b3b6a25
+vendor/app/CACertService/CACertService.apk|a430eb051f565ff00f4d8d2aa2dd2a7c8c3bec90
+vendor/app/CneApp/CneApp.apk|6e355ca21e53c8a84794f06e1057e62ff2df1a58
+vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2
 vendor/bin/cnd|78d2771551abf43a093a0fbe0aba933c9f6a8097
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
