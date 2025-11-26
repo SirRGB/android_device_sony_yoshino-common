@@ -43,11 +43,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
 DEVICE_PACKAGE_OVERLAYS += \
+    $(PLATFORM_PATH)/overlay-lineage \
     $(PLATFORM_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(PLATFORM_PATH)/overlay/packages/apps/FlipFlap
+    $(PLATFORM_PATH)/overlay-lineage/packages/apps/FlipFlap
 
 ### Additional native libraries
 PRODUCT_COPY_FILES += \
